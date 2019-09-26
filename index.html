@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>exsam</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='style/index.css'>
+</head>
+
+<body>
+    <div class="container" id="quetions">
+        <p>Choose the object that matches the word.</p>
+        <div id="first">
+            <p>blackboard</p>
+
+            <div class="input-div">
+                <input type="radio" id="blackboard" name="FirstQuetion" value="blackboard">
+                <label for="blackboard"><img src="./image/chalkboard-solid.svg" width="25px"></label>
+            </div>
+
+            <div class="input-div">
+                <input type="radio" id="table" name="FirstQuetion" value="table">
+                <label for="table"><img src="./image/table.png" width="25px"></label>
+            </div>
+
+            <div class="input-div">
+                <input type="radio" id="chair" name="FirstQuetion" value="chair">
+                <label for="chair"><img src="./image/chair.png" width="25px"></label>
+            </div>
+            <div style="float: right;">
+                <button class="previous round" disabled>&#8249;</button>
+                <button onclick="gotoSecondQuetaion()" class="next round">&#8250;</button>
+            </div>
+        </div>
+
+        <div id="second">
+            <p>pencil</p>
+
+            <div class="input-div">
+                <input type="radio" id="notebook" name="SecondQuetion" value="notebook">
+                <label for="notebook"><img src="./image/notebook.png" width="25px"></label>
+            </div>
+
+            <div class="input-div">
+                <input type="radio" id="pencil" name="SecondQuetion" value="pencil">
+                <label for="pencil"><img src="./image/pencil.png" width="25px"></label>
+            </div>
+
+            <div class="input-div">
+                <input type="radio" id="backbag" name="SecondQuetion" value="backbag">
+                <label for="backbag"><img src="./image/backbag.png" width="25px"></label>
+            </div>
+            <div style="float: right;">
+                <button class="previous round" onclick="gotoFirstQuetaion()">&#8249;</button>
+                <button onclick="gotothirdQuetaion()" class="next round">&#8250;</button>
+            </div>
+        </div>
+
+        <div id="third">
+            <p>desk</p>
+
+            <div class="input-div">
+                <input type="radio" id="pincles" name="ThirdQuetion" value="pincles">
+                <label for="pincles"><img src="./image/pincles.png" width="25px"></label>
+            </div>
+
+            <div class="input-div">
+                <input type="radio" id="desk" name="ThirdQuetion" value="desk">
+                <label for="desk"><img src="./image/desk.png" width="25px"></label>
+            </div>
+
+            <div class="input-div">
+                <input type="radio" id="book" name="ThirdQuetion" value="book">
+                <label for="book"><img src="./image/book.png" width="25px"></label>
+            </div>
+            <div style="float: right;">
+                <button class="previous round" onclick="gotoSecondQuetaion()">&#8249;</button>
+                <button class="next round" disabled>&#8250;</button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="rest()" class="submit">rest</button>
+
+            <button onclick="submit()" class="submit">submit</button>
+        </div>
+    </div>
+    <div class="container" id="result">
+        <p style="color: cornflowerblue;">Good thing, you finished the test your result is <p id="data"></p>/3</p>
+        <button class="submit back" onclick="back()">back To quiz</button>
+    </div>
+    <script src='javascript/index.js'></script>
+</body>
+
+</html>
