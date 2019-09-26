@@ -65,7 +65,7 @@ function submit() {
         degree = degree + 1;
     }
     console.log(degree);
-    document.getElementById("data").innerHTML=degree;
+    document.getElementById("data").innerHTML=degree + "/3";
 }
 
 function rest() {
